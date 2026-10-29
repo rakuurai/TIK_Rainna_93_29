@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout HTML dan CSS</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="biodata1style.css">
+        <link rel="stylesheet" href="sts_93_29.css">
+    </head>
+    <body>
+        <div class="header">
+            <h6>HEADER</h6>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts.html">STS</a>
+        </div>
+        <!-- Bagian Content -->
+         <h1>Biodataku</h1>
+
+    <div class="biodata">
+
+        <div class="content">
+
+            <div class="foto">
+                <img src="WhatsApp Image 2026-08-17 at 12.10.36 AM (2).jpeg"
+                     alt="Foto masa besar"
+                     class="top">
+
+                <img src="WhatsApp Image 2026-08-17 at 12.10.35 AM.jpeg"
+                     alt="Foto masa lalu"
+                     class="bottom">
+            </div>
+
+            <div class="isi">
+                <p><b>Nama Lengkap:</b> Mikaela Rainna Servia Tedjasukmana</p>
+                <p><b>Tanggal Lahir:</b> 13 September 2012</p>
+                <p><b>Hobi:</b> Membaca, mendengarkan musik</p>
+                <p><b>Alamat:</b> Jl. Sutera Orlanda V no. 1, Tangerang Selatan</p>
+                <p><b>Email:</b> mikaela_10137@smp.santaursulajakarta.sch.id</p>
+                <p><b>Motto:</b> "The moon awaits its executioner"</p>
+                <p><b>Pesan:</b> "Be the best version of you"</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="favorite">
+
+        <h4>Lagu-lagu Favorit</h4>
+
+        <div class="card-container">
+
+            <div class="card music-card" onclick="playMusic('song1', this)">
+                <img src="do it all again.jpg"
+                     alt="Do It All Again - MICO">
+
+                <div class="label">
+                    <b>Do It All Again</b>
+                    <span>MICO</span>
+                </div>
+
+                <audio id="song1">
+                    <source src="MICO - Do it all again (Official Visualizer).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+            <div class="card music-card" onclick="playMusic('song2', this)">
+                <img src="zankokuda na tenshi no thesis.jpg"
+                     alt="Zankoku na Tenshi no Thesis - Yoko Takahashi">
+
+                <div class="label">
+                    <b>Zankoku na Tenshi no Thesis</b>
+                    <span>Yoko Takahashi</span>
+                </div>
+
+                <audio id="song2">
+                    <source src="「残酷な天使のテーゼ」MUSIC VIDEO（HDver.）_Zankoku na Tenshi no Te-ze“The Cruel Angel's Thesis”.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+            <div class="card music-card" onclick="playMusic('song3', this)">
+                <img src="mata air.jpg"
+                     alt="Mata Air - Hindia">
+
+                <div class="label">
+                    <b>Mata Air</b>
+                    <span>Hindia</span>
+                </div>
+
+                <audio id="song3">
+                    <source src="Hindia ft. Natasha Udu - Mata Air (_Official Lyric & Commentary Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+            <div class="card music-card" onclick="playMusic('song4', this)">
+                <img src="chop suey.jpg"
+                     alt="Chop Suey! - System of a Down">
+
+                <div class="label">
+                    <b>Chop Suey!</b>
+                    <span>System of a Down</span>
+                </div>
+
+                <audio id="song4">
+                    <source src="System Of A Down - Chop Suey! (Official HD Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+
+
+        <h4>Tempat Favorit</h4>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="yokohama.jpg" alt="Yokohama, Jepang">
+
+                <div class="label">
+                    <b>Yokohama</b>
+                    <span>Jepang</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="belitung.jpg" alt="Belitung, Indonesia">
+
+                <div class="label">
+                    <b>Belitung</b>
+                    <span>Indonesia</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="melbourne.jpg" alt="Melbourne, Australia">
+
+                <div class="label">
+                    <b>Melbourne</b>
+                    <span>Australia</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="tokyo.jpg" alt="Tokyo, Jepang">
+
+                <div class="label">
+                    <b>Tokyo</b>
+                    <span>Jepang</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h4>Makanan Favorit</h4>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="bakmi.jpg" alt="Bakmi">
+
+                <div class="label">
+                    <b>Bakmi</b>
+                    <span>Makanan favorit</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="sup kacang merah.jpg" alt="Sup Kacang Merah">
+
+                <div class="label">
+                    <b>Sup Kacang Merah</b>
+                    <span>Makanan favorit</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="ramen.jpg" alt="Ramen">
+
+                <div class="label">
+                    <b>Ramen</b>
+                    <span>Makanan favorit</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="sate.jpg" alt="Sate Ayam">
+
+                <div class="label">
+                    <b>Sate Ayam</b>
+                    <span>Makanan favorit</span>
+                </div>
+            </div>
+
+        </div>
+
+        <h4>Tontonan Favorit</h4>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="bsd.jpg" alt="Bungo Stray Dogs">
+
+                <div class="label">
+                    <b>Bungo Stray Dogs</b>
+                    <span>Anime</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="pjo.jpg" alt="Percy Jackson and the Olympians">
+
+                <div class="label">
+                    <b>Percy Jackson</b>
+                    <span>Series</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="spirited away.jpg" alt="Spirited Away">
+
+                <div class="label">
+                    <b>Spirited Away</b>
+                    <span>Movie</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="kny.jpg" alt="Demon Slayer">
+
+                <div class="label">
+                    <b>Demon Slayer</b>
+                    <span>Anime</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <h4>Hobi</h4>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="music.jpg" alt="Mendengarkan lagu">
+
+                <div class="label">
+                    <b>Mendengarkan Musik</b>
+                    <span>Hobi</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="books.jpg" alt="Membaca buku">
+
+                <div class="label">
+                    <b>Membaca Buku</b>
+                    <span>Hobi</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="write.jpg" alt="Menulis buku">
+
+                <div class="label">
+                    <b>Menulis</b>
+                    <span>Hobi</span>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="sleep.jpg" alt="Tidur">
+
+                <div class="label">
+                    <b>Tidur</b>
+                    <span>Hobi</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let currentAudio = null;
+        let currentCard = null;
+
+        function playMusic(id, card) {
+
+            const audio = document.getElementById(id);
+
+            if (currentAudio === audio) {
+
+                if (audio.paused) {
+                    audio.play();
+                    card.classList.add("playing");
+                } else {
+                    audio.pause();
+                    card.classList.remove("playing");
+                }
+
+                return;
+            }
+
+            if (currentAudio !== null) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            if (currentCard !== null) {
+                currentCard.classList.remove("playing");
+            }
+
+            audio.play();
+
+            currentAudio = audio;
+            currentCard = card;
+
+            card.classList.add("playing");
+
+            audio.onended = function() {
+                card.classList.remove("playing");
+                currentAudio = null;
+                currentCard = null;
+            };
+        }
+
+    </script>
+        
+        <div class="Footer">
+            <p>Rainna IX-3/29</p>
+        </div>
+    </body>
+</html>
