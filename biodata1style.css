@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    padding: 30px 0 60px 0;
+
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    background-color: cornflowerblue;
+    color: black;
+
+    text-align: center;
+
+    width: fit-content;
+    margin: 10px auto 30px auto;
+
+    padding: 10px 35px;
+
+    border-radius: 12px;
+}
+
+div.biodata {
+
+    margin: 30px auto;
+
+    width: 70%;
+
+    background-color: cornflowerblue;
+
+    color: black;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 3px solid powderblue;
+
+    box-sizing: border-box;
+}
+
+div.content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 60px;
+
+}
+
+div.foto {
+
+    position: relative;
+
+    width: 250px;
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid powderblue;
+
+    flex-shrink: 0;
+}
+
+div.foto img {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+div.foto img.top {
+
+    opacity: 1;
+
+    z-index: 2;
+}
+
+div.foto:hover img.top {
+
+    opacity: 0;
+
+    transform: scale(1.1);
+}
+
+div.foto img.bottom {
+
+    opacity: 0;
+
+    z-index: 1;
+}
+
+div.foto:hover img.bottom {
+
+    opacity: 1;
+
+    transform: scale(1.1);
+}
+
+div.isi {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 600px;
+}
+
+
+div.isi p {
+
+    margin: 8px 0;
+}
+
+
+
+div.favorite {
+
+    width: 85%;
+
+    text-align: center;
+
+    margin: 40px auto;
+}
+
+div.favorite h4 {
+
+    font-size: 25px;
+
+    background-color: cornflowerblue;
+
+    color: black;
+
+    display: block;
+
+    padding: 10px 25px;
+
+    border-radius: 10px;
+
+    margin: 45px auto 25px auto;
+
+    width: fit-content;
+
+    border: 2px solid powderblue;
+}
+
+.card-container {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.card {
+
+    width: 170px;
+
+    background-color: rgba(100, 149, 237, 0.95);
+
+    border: 4px solid powderblue;
+
+    border-radius: 15px;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    cursor: pointer;
+}
+
+.card:hover {
+
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+.label {
+
+    margin-top: 8px;
+
+    padding: 8px 5px;
+
+    background-color: powderblue;
+
+    border-radius: 8px;
+
+    min-height: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+.label b {
+
+    font-size: 14px;
+
+    line-height: 1.2;
+
+}
+
+
+.label span {
+
+    font-size: 12px;
+
+    margin-top: 4px;
+
+    opacity: 0.8;
+}
+
+.music-card {
+
+    position: relative;
+}
+
+.music-card::after {
+
+    content: "▶";
+
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: powderblue;
+
+    color: black;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    opacity: 0.9;
+}
+
+.music-card.playing {
+
+    border-color: white;
+
+    box-shadow:
+        0 0 10px powderblue,
+        0 0 25px cornflowerblue;
+
+    transform: translateY(-8px) scale(1.03);
+}
+
+
+.music-card.playing::after {
+
+    content: "❚❚";
+
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+
+    div.biodata {
+
+        width: 85%;
+
+    }
+
+    div.content {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+    }
+
+    div.isi {
+
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+
+        padding-top: 15px;
+
+    }
+
+    div.biodata {
+
+        width: 92%;
+
+        padding: 20px;
+
+    }
+
+    div.foto {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+    div.isi {
+
+        font-size: 15px;
+
+    }
+
+    div.favorite {
+
+        width: 95%;
+
+    }
+
+    .card {
+
+        width: 145px;
+
+    }
+
+    .card img {
+
+        height: 130px;
+
+    }
+
+}
+
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
