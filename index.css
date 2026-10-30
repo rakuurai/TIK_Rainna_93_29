@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* style pada header */
+.header{
+    background-color: cornsilk;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* style pada topnav */
+.topnav{
+    overflow: hidden;
+    background-color: cornflowerblue;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color: deepskyblue;
+}
+.footer{
+    background-color: cornsilk;
+    padding: 15px;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: 2;
+    width: 100%;
+    background-color: antiquewhite;
+}
+th, td{
+    padding: 5px;
+}
+tr{
+    background-color: cornflowerblue;
+}
+tr:nth-child(even){
+    background-color: rgb(196, 217, 255);
+}
+tr:hover{
+    background-color: rgb(13, 75, 147);
+}
+
+ul{
+    list-style-type: circle;
+}
+
+ol li{
+    background-color: cornflowerblue;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(55, 118, 234);
+    text-align: justify;
+}
+
+ul li{
+    background-color: cornflowerblue;
+    margin: 6px 0;
+    padding: 6px 12px;
+    border: 2px solid rgb(55, 118, 234);
+    text-align: justify;
+}
+
+ol li.stroberi{
+    background-color: rgb(200, 99, 119);
+    border: 2ox solid rgb(134, 59, 88);
+    color: white;
+    font-weight: bold;
+}
+
+.judul-lorem {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.daftar-lorem {
+    background-color: rgb(46, 95, 184);
+    margin: 0;
+    padding: 6px 8px 6px 20px;
+}
+
+.daftar-lorem li {
+    background-color: #ffc0cb;
+    border: 2px solid cornflowerblue;
+    padding: 5px 4px;
+    line-height: 1.2;
+}
+
+i.fas.fa-bolt{
+color:black;
+font-size:12px;
+}
+
+i.fas.fa-moon{
+color:black;
+font-size:12px;
+}
+
+i.fas.fa-headphones{
+color:black;
+font-size:12px;
+}
+
+i.fas.fa-rainbow{
+color:black;
+font-size:12px;
+}
+
+i.fas.fa-dragon{
+color:black;
+font-size:12px;
+}
+
+.ikon {
+    background-color: #ffc0cb;
+    margin-top: 5px;
+}
+
+.daftar-ikon {
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 8px 8px 8px 20px;
+}
+
+.daftar-ikon li {
+    background-color: #ffc0cb;
+    border: 2px solid cornflowerblue;
+    padding: 5px 4px;
+    min-height: 25px;
+}
+
+.daftar-ikon i {
+    width: 13px;
+    text-align: center;
+}
